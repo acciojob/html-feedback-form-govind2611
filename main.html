@@ -7,8 +7,39 @@
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+<h1>Feedback Form</h1>
+	<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">Name</label>
+    <input type="text" id="name" minlength="3" maxlength="50"name="firstname" placeholder="Your name..">
+</br>
+	  <label for="url">Your Url</label>
+    <input type="url" id="url" name="url" placeholder="url">
+</br>
+   
+    <label for="color">Fevourite Color</label>
+    <select id="color" name="color">
+      <option value="white">White</option>
+      <option value="Black">Black</option>
+      <option value="Green">Green</option>
+		 <option value="Yellow">Yellow</option>
+      <option value="Red">Red</option>
+		
+    </select>
+</br>
+	  <p>Likeness Of your Color</p>
+	  <input type="range" min="1" max="100" value="50" class="slider" id="likeness">
+    
+  </br>
+	   </br>
+	  <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+</br>
+    <input type="submit" value="Submit">
+
+  </form>
+</div><script type="text/javascript" src="./script.js">
 </script>
 
 </body>
